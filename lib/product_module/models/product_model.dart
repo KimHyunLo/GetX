@@ -8,25 +8,25 @@ String productToJson(List<ProductModel> data) =>
 
 class ProductModel {
   ProductModel({
-    this.id,
-    this.brand,
-    this.name,
-    this.price,
-    this.priceSign,
-    this.currency,
-    this.imageLink,
-    this.productLink,
-    this.websiteLink,
-    this.description,
+    required this.id,
+    required this.brand,
+    required this.name,
+    required this.price,
+    required this.priceSign,
+    required this.currency,
+    required this.imageLink,
+    required this.productLink,
+    required this.websiteLink,
+    required this.description,
     this.rating,
-    this.category,
-    this.productType,
-    this.tagList,
-    this.createdAt,
-    this.updatedAt,
-    this.productApiUrl,
-    this.apiFeaturedImage,
-    this.productColors,
+    required this.category,
+    required this.productType,
+    required this.tagList,
+    required this.createdAt,
+    required this.updatedAt,
+    required this.productApiUrl,
+    required this.apiFeaturedImage,
+    required this.productColors,
   });
 
   int id;
@@ -97,8 +97,8 @@ class ProductModel {
 
 class ProductColor {
   ProductColor({
-    this.hexValue,
-    this.colourName,
+    required this.hexValue,
+    required this.colourName,
   });
 
   String hexValue;
